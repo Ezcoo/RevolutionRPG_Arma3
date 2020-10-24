@@ -1,0 +1,48 @@
+#include "daylight\ui\defines.hpp"
+#include "daylight\ui\dialogs.hpp"
+#include "daylight\ui\RscTitles.hpp"
+#include "daylight\sfx\CfgSounds.hpp"
+//#include "daylight\sfx\CfgMusic.hpp"
+
+onLoadName			= "$STR_ONLOADNAME";
+onLoadMission		= "$STR_ONLOADMISSION";
+onLoadIntro			= "$STR_ONLOADINTRO";
+overviewText		= "";
+overviewPicture		= "loadScreen.paa";
+author				= "$STR_AUTHOR";
+
+loadScreen			= "loadScreen.paa";
+
+class Header {
+	gameType		= RPG;
+	minPlayers		= 0;
+	maxPlayers		= 64;
+};
+
+showHUD				= 0;
+showMap				= 0;
+
+respawn				= 3;
+respawnDelay		= 5;
+respawnDialog		= 0;
+
+disabledAI			= 1;
+aiKills				= 0;
+
+joinUnassigned		= 1;
+
+disableChannels[]	= {2, 3, 6};
+
+enableDebugConsole = 1;
+
+class CfgDebriefing {
+	class End1 {
+		title				= "Revolution completed";
+		subtitle			= "";
+		description			= "The civilians have successfully completed the revolution and the round has ended.";
+
+		pictureBackground	= "loadScreen.paa"
+	};
+};
+
+daylightAdminUIDs[] = {"76561198028113600", "76561197987454391"};
